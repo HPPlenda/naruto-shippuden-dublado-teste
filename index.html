@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimaWeb - Naruto</title>
+    <style>
+        @font-face {
+            font-family: 'fonte-naruto';
+            src: url('fontes/njnaruto.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap; 
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu-icon" id="menuIcon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav class="nav-overlay" id="navOverlay">
+        <ul class="nav-links">
+            <li><a href="#" onclick="carregarHome()">Início</a></li> 
+            <li><a href="#" onclick="carregarTemporada('temp-17')">Temporada 17</a></li>
+            <li><a href="#" onclick="carregarTemporada('temp-18')">Temporada 18</a></li>
+            <li><a href="#" onclick="carregarTemporada('temp-19')">Temporada 19</a></li>
+            <li><a href="#" onclick="carregarTemporada('temp-20')">Temporada 20</a></li>
+        </ul>
+    </nav>
+
+    <div id="home-screen" class="home-container">
+        <img src="img2.svg" alt="Logo AnimaWeb" class="home-logo">
+        <h1 class="home-text">Bem vindo ao AnimaWeb</h1>
+    </div>
+
+    <div id="temp-17" class="container-flex" style="display: none;">
+        
+        <button class="btn-custom" data-link="https://mega.nz/file/D5ZmjZ6D#WaF2B0j-poE3V9G6oQfMyMlvo5DMQAH4pSI552zJwko">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>362 - A Determinação de Kakashi</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://mega.nz/file/Ht5X2CRC#PEhNEQBZCfJa-Hdylb65jrTxwI4F18He7QVcmWT-Exk">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>363-O Jutsu das forças Aliadas Shinobi!</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://mega.nz/file/j5JTiRxa#pG4qYy-BVooepSC-qg5LdLfrp7lDPKRoGVPmPl2WYfg">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>364 - Os laços que formam vínculos</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://mega.nz/file/2shUiIzA#K4skkshq1xSX-S_Ev3EWr1CdwtIIsFgJ_oda3MWx7zA">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>365 - Aqueles que dançam nas sombras</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://mega.nz/file/HoY2jT7L#XQf2UE7NDUHgQJEdtZ71hrkmOD_oZPQlEZm8IsgmOow">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>366 - Aqueles que tudo sabem</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://mega.nz/file/WgwTHLgI#Uy1HvD_hgLevMa6SrhNjA2e7u0XHiqmzKDv1PaPv69s">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>367 - Hashirama e Madara</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://mega.nz/file/6xY0VQQC#CpUvv7hLj5I2WYCJ-w2rH3-5Mx-WMxt3nzH8A5GzAM8">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>368 - A Era dos Estados em Guerra</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://mega.nz/file/r0gFwbgb#E8D-1j63PVqm2mK4YM8Y7LjMsia6cgm3m02QPtCX484">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>369 - Meu verdadeiro sonho</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://mega.nz/file/D45CBZxL#46VNobjk_HYEzk8Z9MjHyfJoA46mEZUeaBsLY0SQxMk">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>370 - A Resposta de Sasuke</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://mega.nz/file/r1o2VaAQ#1DgPWxEsg24XAnUrzAKptQvoXGKpfn84q_IVOrocg3U">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>371 - Buraco</span></div>
+        </button>
+        <button class="btn-custom" data-link="https://www.google.com">
+            <div class="lado-esquerdo"><img src="img.svg" alt="Ícone" class="icon-svg"></div>
+            <div class="lado-direito"><span>372 - Algo que Preenche o buraco</span></div>
+        </button>
+
+    </div>
+
+    <div id="temp-18" class="container-flex" style="display: none;">
+        
+        <button class="btn-custom" data-link="https://mega.nz/file/35Iw0Y4Q#XyuKSCHgawX1YisV1WRGYh5-vvZPmM6dXPbka5jJ8L4"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>373 - Equipe 7 reunir!</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/X85nWQTK#j28OhvKPTgPmcqi-0WoKD4NzrhwCg7RPcO5y_y-w_8Q"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>374 - O Novo Trio do impasse mortal</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/iogmBQDD#0r7g2hdawJ-qyV-1eJLp9m5ZqelCaqyHs1bm00n0vvQ"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>375 - Kakashi vs Obito</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/DoYlGDiS#w_CLzEDfLYxp1SDrGrXxR8gkwTBfvEKxAoFX3zJ-qSk"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>376 - Edição extras: Instruções Para Capturar a nove caudas</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/ftwAAB4b#1ySIzIR_Cxtaj-WlvutPr_-31fMi1oCt__yHq4i-QV8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>377 - Edição extras: Naruto contra Naruto Robô</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/CxwTmIaD#AfbKsp7IxJQf2VsRuzaqxC_pUuzaHkaQJxC1FBqELno"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>378 - O Jinchuriki do dez caudas</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/ftwAAB4b#1ySIzIR_Cxtaj-WlvutPr_-31fMi1oCt__yHq4i-QV8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>379- Uma Abertura</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/WsAAUSaR#ZHAaPVhuSGlViWxjdRT3o3kC-YzdUjdEsU6jf543v80"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>380- O Dia em Que Naruto Nasceu</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/ixhBBLaT#N6rNCXWwlsGybnAa8mB0vNrFN1CAUfYw_pqzYs6DSN8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>381 - A Árvore Divina</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/PxARkT4T#ikjPbqHap79Vw5C2lvozDMaLmauNc_rxyUTYfTqkOd8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>382 - O Sonho de um Shinobi</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/2kREQJDJ#Q6ti6Wx13-a6fQXRm6nzA_N0elQphvHmTSEJ82FcE9E"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>383 - Perseguindo a Esperança</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/XoJQEC5L#av_Q8W18WA-L_i526tz00l8J0yG-yzPKChTAUzs0PFw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>384 - Um coração cheio de companheiro</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/f4QRAKLL#w7YE3iK8vt76TRq6ZRi1yQoq33JdbjjH4htLMcmA47Y"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>385 - Obito Uchiha</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/G150RbKI#ClnW6g6K5d_XS7F4GLNqwHHfxfqDFTe3QOi-asziTkk"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>386 - Estou sempre te observando</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/ewRSWKwL#uNU0Su5hUHs33I8CrL__4B8KAw4vE0Rgxdci6iPRHhw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>387 - A promessa que foi mantida</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/nphFmBjI#rYo6YJSi-j_1x9AS2ws2CUJ3oMtosl-wX3fLfgmxm1U"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>388 - Meu Primeiro Amigo</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/fpBUzAAR#aoZzIo_r1L2ABYmTqVozmu2PRovqZqrd3sGehIdwgFY"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>389 - A adorada irmã mais velha</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/CxISDTpK#V0gitKOHRdZNBw4P8m4tpzOCXSGk5-Q3lKETEEdKdd4"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>390 - A Decisão de Hanabi</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/yxhHlBDa#OZyQgW8CN2oIFsas2il3slHqtNjBoK0bCNZkxUArhaw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>391 - A ascensão de Madara Uchiha</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/W05y3ICA#Aqq3_jefYCIfG2WjJh1t_jvgcDMiFRorzp8T_XImT84"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>392 - O coração Escondido</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/i05hSCAS#cL6OKoLMGZiHt4RRGM3jSKpNw43Sr9g9WL6xxp-IQx0"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>393 - Um Verdadeiro Fim</span></div></button>
+
+    </div>
+
+    <div id="temp-19" class="container-flex" style="display: none;">
+        
+        <button class="btn-custom" data-link="https://mega.nz/file/awg2BKaK#LOdzUN3yhWoZEEI3uFoy3q7hhxBogwyMkKTYs766Fro"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>394 - A Nova prova chunin</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/e4wgCbSa#l7Hf73nPT970gxACC07pP2ebTjHukaXEAL6ASvPrSdg"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>395 - Começa a prova chunin</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/To4y0DCA#Scsg2PZk_ydE0DK9Kaxefdhtnn6DpJOIPBr7QniBdvs"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>396 - As Três Questões</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/io5HiRpQ#OhsZGcRvWzIiACZuLZnEMxeeBWwnV0pUtOR5FG4ZuPI"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>397 - Alguém digno de Ser Líder</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/f9hgTaSS#G8YmxaByTjEeascDGs7vI85MBMoyvSOHtfw0Xi-LYwg"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>398 - A noite antes da segunda prova</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/39pFnJQT#vz5CxWklLUE0Z5lChwnbw4gItPbq5gclk3UEBrG5FZ0"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>399 - Sobrevivência no Deserto Infernal</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/q1IX3Y4I#3noo0puy7l507Pa6q9ZccXbTmLz1Lkb2ERDziKOiv10"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>400 - Como um Usuário de Taijutsu...</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/D4BXkDaI#_gq5mXaA9ryrSP446ujbL38QpcMsP6RXbASUvjQmPIU"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>401 - O Final</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/31ZxVDxS#ILHB2R92PdunIawZwZIIaIg1hVbGGbwfIUAEAcysbkA"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>402 - Fuga E Perseguição</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/qshzgIiK#CL4OH68Y9Yf3mXUIOU3Z1rmtol8aF0wuPf7V8OwILS8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>403 - Coragem Sem limites</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/blIDGArK#w-mlqZLSeTnj_y5Mnn8ItoZcaE6nWUDfnUW5XLkd58Q"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>404 - Os Problemas de Tenten</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/ixRxTbAb#-Ij9tuSycQjAEpiAjOg49NuAeHiLsUcx5m-bYE55MRI"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>405 - A Dupla encarcerada</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/C5Q1ATQC#xlf1KVYG0ifwdqyJ-5kJ7UBe9YKPe0diseI0ojjKp60"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>406 - O Meu Lugar</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/f5p2zSiB#HfJFYCuF3ZG3E0LdoxTHFTpDbP90F1Xzjr6Z_u_ms2g"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>407 - O ninjutsu secreto do clã Yamanaka</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/6kpBULaT#1eYLqc7W3wgt62KoKYEMLDNSuqzQ8Xp8lI74suFjkLM"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>408 - A Marionete Amaldiçoada</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/agxjzIaA#h-UyzDYdcfDbCpvSfAXvMFvsNJdg7WugshpWqyC7tR8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>409 - Sua retaguarda</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/fogRQK4I#-RQOb7mHyBVfqiZ_dVC-K2wHZyKGi_9XzwAfoJ6T9Ck"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>410 - O Início do plano secreto</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/zlZAnYYK#4Iy02s3k1DJ-7f6A4aFwcW7Q-gRvEiFAmXoveSKEcGw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>411 - A almejada Besta com caudas</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/f8o3hIBK#yx3GGqNomYduwVWA-PIMxkG9iFnwQQxLzTq-V9T5UgY"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>412 - A decisão de Neji!</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/KgJDlQ6L#dPb8IZfX5m9i_HxFylVA1HWNgRVRfX_FtWnIOLg_WhY"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>413 - Esperanças para o futuro</span></div></button>
+
+    </div>
+
+    <div id="temp-20" class="container-flex" style="display: none;">
+        
+        <button class="btn-custom" data-link="https://mega.nz/file/cRUliTza#Ds9Ujm2q_dIlrKQf0UG_7epVEb0fzkMAeY4GnF0RnX8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>414 - A Beira da Morte</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/JYtEHSYA#ARguEeNF-5GSPu7bE93jlxupY8n3fF2J5m0uQe1l63M"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>415 - Os Dois Mangekyo</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/YEU2VRID#QNSdxpIUOcjk_XnSIDWQuyE9RI8goLPUzZZjvPeWN-4"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>416 - A Formação Da Equipe Minato</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/JUt0yZ6Z#i_hAJfOIe8LCw_-jClb-DnAfEZrwXsXGZv1sEUpit7U"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>417 - Você será o meu apoio</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/NI9wFAhQ#paV_kWHwei7tE6Xf_VIW5Jmq-K515KZmzNJW8qi8xmM"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>418 - A Besta azul contra Os Seis Caminhos de Madara</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/VUEBDZwA#v1juBs-Jh1QprnNi329aegdrc4eZ4C8-pE2y8SuotT0"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>419 - A Juventude do Papai</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/xJ8gEIjI#FWjPjEVs5uqp1cpopKnFce2tpKgK9D0RcjN1mUZhj18"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>420 - A Formação dos oitos portais internos</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/FB0WgB4J#76AKjzd402ZxaReMW41b5Z6rRczGZ0Yui39JNDjLXHY"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>421 - O Sábio dos Seis Caminhos</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/1EljjDQY#UL8zTg99AVOhxAUoJUogN0qDez11d6c3vOWNltFpe28"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>422 - Aqueles Que Herdaram</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/0UlwTIRY#mRSY3tPiIUy104hSlrFl_AXgKQ5ZRyKt38Iq2sFGqT0"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>423 - O Rival de Naruto</span></div></button>
+        
+        <button class="btn-custom" data-link="https://mega.nz/file/8IlH0RjI#KrE29fL5-5dXmvDtJ5AweghRss9LehR_nTZqMvH5tSs"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>424 - Elevação</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/wIlilT5J#uT72InD53AkvKi7nz07ecylczLM8ulDxx-A1AYNVY3g"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>425 - O Sonho Infinito</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/xRsjVYQB#1mNRAriVIt-arRKkAXexpWgOU6Jm3XnqYh-rQzv7P5E"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>426 - O Tsukuyomi Infinito</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/VUc21YoA#NQVe9xr6sHHZ4kKEokZ77TdGicKhlDHA3vBOg6cmyAM"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>427 - O Mundo dos Sonhos</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/BIUBxboD#tXwiGwtxqnh7uD8NC64pifzzlssqJJ2TrE4UY1eemJ4"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>428 - O Lugar de Tenten</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/RU0zRbLT#rBwtptvIM36VVKTyHdA6mzmw1VoQQfOLQrv2AUcYUfs"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>429 - Killer Bee Rappuden: parte1</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/lJEExR7L#ZZIYYKl5wLCn1tWy5jIIg-zXHUTjcN_y640ze6rwsOs"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>430 - Killer Bee Rappuden: parte2</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/8dMlgDCI#wjr_x3ETqiJeHptP1BJ3V6c4Kihc7t83a8az3Fsqsec"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>431 - Para ver Aquele Sorriso, Só mais uma vez</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/tIkjFJDL#qE16KaAU2soicoDRp6BVTfGLjEv-V1ZWFcCj2ERdOrg"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>432 - Os pergaminhos ninja de Jiraya: O conto do herói Naruto: O Ninja Perdedor</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/YFVz3SJJ#4B8xUWnszJFUJ5kplU5inSwAGwx3PLhirDJGYRmNN1o"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>433 - Os pergaminhos ninja de Jiraya: O conto do herói Naruto:A Missão de Busca</span></div></button>
+
+        <button class="btn-custom" data-link="https://mega.nz/file/cNlTEaQR#b1LTacBBIQaSKF2kjCq05EjN1ErndSrbnQWs2rVP3NY"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>434 - Os pergaminhos ninja de Jiraya: O conto do herói Naruto: Equipe Jiraiya</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/MAtjBA5a#1HnAw4-_Pv1opsaNKMFNWP8rWbFVTGSWuwJ_niIlC_Q"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>435 - Os pergaminhos ninja de Jiraya: O conto do herói Naruto: Prioridades</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/BVFXVRbC#quKdXU1e1LVsWleH3es6yOnruXVKXkmCm5XA-YgUPDs"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>436 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto: O Homem Mascarado</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/IV9l1YRT#n6wav2TyJ3tjCsN_WfQq9n5ebpIychzmbV2RqKa5X18"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>437 - Os pergaminhos ninja de Jiraya: O conto do herói Naruto:O Poder Selado</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/VIET2Rxa#Ke9xBsF0ymE11B_Ri7yo-czWuuAXQX1dpqC0_p-I47E"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>438 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto:Regras ou Companheiros?</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/JN0zDaoD#eJW8z_N53DrrOQvSFYukOk7BtRb5U9Fd4CrRnb8HY3E"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>439 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto: A Criança da Profecia</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/0c8S1T7b#q0TBhct3WuCoNTl1mo9gnYluiG_Y2MExzR33S5a0CW0"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>440 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto:O Pássaro Engaiolado</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/8Akn1ZRT#pph0mtbkCoFTlgrfEwkXdVtLKfhA1DjhCdWBL38ISW4"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>441 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto: Voltando para casa</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/0IVURBRI#f2vMsxay9Jrlio4KwKUD-9FvggGMKHrPRoEIV9aa-2s"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>442 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto:O Caminho Mútuo</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/EQkiBa4Z#SQffCRMZfAEqWcvWLqkyJSxhQ3OKm97unyDjaPfKNmQ"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>443 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto: A Diferença de Poder</span></div></button>
+
+        <button class="btn-custom" data-link="https://mega.nz/file/kcFFATiJ#r6bL-ANDLIDG_SOIwuqU__1R3mM1GRQQdYmHCQkV_rY"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>444 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto:Saindo da aldeia</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/4cFDxDwK#41f7NSJ67IIv2xDeRMtxfq6fPpf8khWJfCnH0-njh1o"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>445 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto: Perseguidores</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/1UUSRZxb#tDeNqeJKFzdMtzmjPWcuRY3XoS0xFHC-Lb5ynl2sFJM"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>446 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto: Conflito</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/UFUVyKxL#osZwtCzglev0gLU9vxXdn7G434XEsva3KS8okDqTFys"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>447 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto: Outra Lua</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/tF8iGT5K#UoI2zr6lUMpggmjEGNqh5X8bxuu-d8uwyoD91U2eYO8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>448 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto: Companheiro</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/hZNXBIjR#XI4zwYi41QPR1rSXvntVKU6e3a2LpmjvX5PQ5LFGaR4"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>449 - Os pergaminhos ninja de Jiraya:O conto do herói Naruto:Os ninjas se unem</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/hZF3xKoL#v327q_kGuE9DLvXXQiZjHIqB6zfD9TcZF5yYhuDF9gA"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>450 - Os pergaminhos ninja de Jiraya: O conto do herói Naruto: Rivais</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/wEUGBTjB#UuZMXkMHdyyn5zAVvfcnlQMU19trnC1-ShArdcuCFQw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>451 - A história de Itachi Luz e trevas: Nascimento e morte</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/gJ03hQCb#_NhJMp57R6XWb8gC-O1ryTLyxq4IWVy_iAK5KbmylwQ"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>452 - A história de Itachi Luz e trevas:O Gênio</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/EZVlFJCZ#zlEUScPkGW0x4PDMC8R85KJfUASU_3MGzQykEg4FZ7g"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>453 - A história de Itachi Luz e trevas: A dor de Viver</span></div></button>
+
+        <button class="btn-custom" data-link="https://mega.nz/file/UVVx2KrI#XORUdRqQ_0DN3MKXo1nbAnsFE4fApGBYCJcR6HTWFIk"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>454 - A história de Itachi - Luz e trevas: O Pedido de Shisui</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/8Z9kAbpa#wshDagAQxiMjmvBzzZuaXobDuYTThJb1lHkGcWPYs64"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>455 - A história de Itachi Luz e trevas: Noite de Luar</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/QcUClJpD#BeHi69OO5vXcvzzEd53vxhIyCcTfwMkmjtEzy4INGmo"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>456 - A história de Itachi -Luz e trevas: A Escuridão da Akatsuki</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/YBNQHAba#glI4ORm9M-NW5sR2-FiFJdEhAYyVRovodcv1EEicUMw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>457 - A história de Itachi Luz e trevas: Parceiro</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/tQNQlIgT#Fxa6m54mzjSMBFkgfw0K6lWMqhGe9jtksrX4dFRgczY"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>458 - A história de Itachi Luz e trevas: Verdade</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/NAlHHRJb#toI5xIESXX3nQh8qMDFgS_CsrzRevuS7IrjhHTf9yXM"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>459 - A Deusa dos primórdios</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/YMUkjbLJ#pbz3wTrLx0vEldH2QuEF0dhzn6ZsGa44n-Az0DeuKbk"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>460 - Kaguya Otsutsuki</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/MY8wWQAS#adzlOMNgjlZr3C0cPEfPRn6qgmS2C2kvuhCC4cWCPvA"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>461 - Hagoromo e Hamura</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/hZ8UgBwb#K4-mjMl9KVt7bZrPEyaGZRO_SJB8R65YXRWa6kezd_U"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>462 - Um Passado Fabricado</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/cQN3nIZK#9mOpxyldexaeUsLT39SV13CPHFGezPGj9sxrMxWjZxU"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>463 - O Ninja Mais Imprevisível do Mundo!</span></div></button>
+
+        <button class="btn-custom" data-link="https://mega.nz/file/EV9zzITR#5rv_M1YxkCe5Sk29uMblp04M_Hf4I9cZXRdFA2HhxhQ"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>464 - Ninshu: O credo ninja</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/UUdyWYzK#l0PnQtwf3-9Rqn2Q6jW_izHM2IjjdhMT7AEBl503vZY"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>465 - Ashura e Indra</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/wZ0GXCYB#zrqbBkb83PcslJKa_G3CD4gOmLFwEwh6bSUvOMHxx4g"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>466-A Tumultuosa Jornada</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/QBFXiCYC#WjfU70Oq75LgdC-lZDC2MhcaIG0eKzkaHu9NuuzZ3Bw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>467 - A Decisão de Ashura</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/8NMViB4L#ne7s67oDf_wMcYzGO_oFKtMsyh97WNCNTy-s7fYv3SA"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>468 - O Sucessor</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/kFky3QwT#SCk8B5B3p-L8wd2qY9Ifqemr9ALQcfvxbS8oWxeb144"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>469 - Uma Missão Especial</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/VV0nwIAQ#mTmh_c8ISTcI7fHuYLkQvLq2hkvLgMQKcar88WiG0cU"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>470 - Conectando pensamentos</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/UUsj1Y7C#Qo-pswsU4uQ3ngii41KZRVMdCmSW1KElMYCmMb7L5mo"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>471 - Aquele dois...Sempre</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/1FNQ2CQK#ZD0G3_NvAjoo6pBvPO-2ajdgWd3rVPJpf1ELyvG0iqE"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>472 - É Melhor Você...</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/AF0xABoS#ddym5GNfuz891nRKrxYj7KSJRZUxUEwRMF0Y5LO12K0"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>473 - O Sharingan revivido</span></div></button>
+
+        <button class="btn-custom" data-link="https://mega.nz/file/9Q8kzKDb#ImC6yI20reOKBeMN5jVQvVQAwudrpIRRwks343NxMq8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>474 - Parabéns</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/URMgTJ6L#XtWcRSsPf6tfu0zWdQQJqZPLfhHKVv0MscrQ2QjOYPw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>475 - O Vale do Fim</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/hdFm3QCY#1lbrCDXq-ZfCZ_L93e6DKVDu-gC4HxCK6J1YEiMIkc8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>476 - A Batalha Final</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/z55C3LBB#UEhCkjqEnEnJ1kofQFWDjabpihRtuydxSGH4yGfXMr8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>477 - Naruto e Sasuke</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/KgRzlDTb#LRTaRn7SQLiNZcloZ0nDbL4uDl8LvWG2pIg_AooNNBw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>478 - O Símbolo da União</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/Gx5zlQiQ#VfGv4TluQOY-yLzr_qsqg3hCyAxkJgIeG3B5f24ypbA"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>479 - Naruto!! Uzumaki</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/jxpwADgL#JZ7dmYptQUCIseyrY2u_t8yMCTnZKlwRVVjRCofYKeE"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>480 - Naruto e Hinata</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/i8w0xC6a#1-JIdySFtFI9KTQKXGuNFUFYlWIEtSjYnnuT9VnTY3w"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>481 - Sasuke e Sakura</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/XopwEToI#FvFhxDjUw_gmy5US9J0XRXfRRwyO8ThOcENGyrHSXw8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>482 - Gaara e Shikamaru</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/P1QXxTSR#VQvVU-yTdihIHGLDAy2WO1MN0kBuWHX5J93RIA_eSc8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>483 - Jiraiya e Kakashi</span></div></button>
+
+        <button class="btn-custom" data-link="https://mega.nz/file/XpAURbyD#1Lwt8RkMyqSEURnw3_PotomIHRO2_qsVoOMSYZaN3ps"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>484 - A História do Sasuke: Nascer do Sol, parte1: Os Humanos Explosivos</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/j8xARAhC#SxzEO4HKwy7ol9V4Jrpa7ImpNk0qKWxUUxqvdiUMxzQ"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>485 - A História do Sasuke: Nascer do Sol, parte2: Coliseu</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/rowEiRzB#CqHjR7J_jT0-Z_pyCL0E8GNcaJjXm2_2u7Cn9M0H9LI"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>486 - A História do Sasuke: Nascer do Sol, parte3: Fuushin</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/Xl5FTBZQ#Fv1C4vof-dqWx7wQSHwr4YxnXiUXO9zdSzpdRBpELVA"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>487 - A História do Sasuke: Nascer do Sol, parte4:0 Ketsuyugan</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/awgQxbqD#xsvIEJ3Vg_Dt2IYbyDkkV9TZx7uq8cfxlKwNCDIhUrM"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>488 - A História do Sasuke: Nascer do Sol, parte5: A Última Pessoa</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/b9gG0RgC#isKEtfPdTSDqFKdxDT2b3FjYmVUgYYMCja4RXLY-2To"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>489 - A História do Shikamaru uma nuvem vagando pela Escuridão Silenciosa, partel: O Estado das coisas</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/PxpEXBzK#6Ck_GkbzhtkTnDneQLjkoUKFEz9oAsyc4MGBzAoJW7A"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>490 - A História do Shikamaru uma nuvem vagando pela Escuridão Silenciosa, parte2:Nuvens Negras</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/XoBlnZzQ#pC-V6yZpAT8h6b8t9ifgu-Oao7GZjJSrS8OQQ1bK3VE"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>491 - A História do Shikamaru uma nuvem vagando pela Escuridão Silenciosa, parte3: Imprudência</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/DopzDbSZ#beLSE57HjMEQmNono-DBnIHsu0bKEk9gbBb0gtUGIIo"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>492 - A História do Shikamaru uma nuvem vagando pela Escuridão Silenciosa, parte4:Nuvem de Suspeitas</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/LpRUXARC#naYXZioBwqt5riFfzq2Zq3aLmVaSv_tpbfbhGuv9efs"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>493 - A História do Shikamaru uma nuvem vagando pela Escuridão Silenciosa, parte5: Alvorecer</span></div></button>
+
+        <button class="btn-custom" data-link="https://mega.nz/file/7pxjUYBQ#fed1AemidIRXDHftwOXlFOcII6fOZYDpRCu3JvCHMR8"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>494 - História da História da Aldeia da Folha:O Dia perfeito para o Casamento, partel: O Casamento do Naruto</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/ClhS0BqY#ZVC9KA_hqNauuOaNoffNCTIHOvYLsY6MUZGaS4q0aMQ"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>495 - História da Aldeia da Folha:O Dia perfeito para o Casamento, parte2:0 Presente de Casamento todo Poderoso</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/jlZHCaYb#9L4wrliJH1VRPsUZcs1LJFMxrAnNNGAiRKp2g2Nf0YU"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>496 - História da Aldeia da Folha:O Dia perfeito para o Casamento, parte3: Vapor e Pilulas de Comida</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/20RFhLLZ#0Qu6ehpHymqVHpzX-lBIyzZOelpTFjLkzihRJ8gR5Ew"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>497 - História da Aldeia da Folha:O Dia perfeito para o Casamento, parte4: O Presente do Kazekage</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/XtwDGSCI#flIODIEwdiIJ2F_pspZioA1-2JoYyysAqYDoylP4K4E"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>498 - História da Aldeia da Folha:O Dia perfeito para o Casamento, parte5: Última Missão</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/6gBCULZC#SkIRlV74qbmIJVuSZ-b-zmbQBeSdo7ePlF9IrmcXc6g"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>499 - História da Aldeia da Folha:O Dia perfeito para o Casamento, parte6:O Resultado da Missão Secreta</span></div></button>
+        <button class="btn-custom" data-link="https://mega.nz/file/S8I0WJZB#VF_aw-IqabgPb-15IIcG8PxH7k5Yz-9nuN2akEa0Mxw"><div class="lado-esquerdo">
+            <img src="img.svg" class="icon-svg"></div><div class="lado-direito"><span>500 - História da Aldeia da Folha:O Dia perfeito para o Casamento, parte7: A Mensagem</span></div></button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
